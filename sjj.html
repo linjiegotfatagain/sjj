@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>插入图片示例</title>
+    <style>
+        .hidden-content {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>孙金晶是猪</h1>
+    </header>
+    <div class="container">
+        <button class="btn" onclick="toggleContent()">看看猪</button>
+        <div id="content" class="hidden-content">
+            <img src="C:\Users\hp\Documents\GitHub\sjj\img\zhu.jpg" alt="图片描述">
+            <h2>大胆！</h2>
+            <p>她才不是猪</p>
+        </div>
+    </div>
+    <script>
+        function toggleContent() {
+            const content = document.getElementById('content');
+            if (content.classList.contains('hidden-content')) {
+                content.classList.remove('hidden-content');
+                content.classList.add('show');
+            } else {
+                content.classList.remove('show');
+                content.classList.add('hidden-content');
+            }
+        }
+    </script>
+</body>
+</html>
