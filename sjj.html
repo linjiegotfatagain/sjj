@@ -11,6 +11,11 @@
         .show {
             display: block;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -20,7 +25,7 @@
     <div class="container">
         <button class="btn" onclick="toggleContent()">看看猪</button>
         <div id="content" class="hidden-content">
-            <img style="max-width:100%;overflow:hidden";img src="zhu.jpg" alt="图片描述">
+            <img src="zhu.jpg" alt="图片描述">
             <h2>大胆！</h2>
             <p>她才不是猪</p>
         </div>
